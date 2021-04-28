@@ -1,0 +1,56 @@
+:root {
+	--light-color: #fff;
+	--dark-color: #2d2e2e;
+	--bg-color: #1c1c1c;
+	--pg-color: #b3b3b3;
+	--blue-color: #5b8ce9;
+}
+.footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	grid-gap: 20px;
+	padding: 0 20px;
+
+	background: #7f7fd5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#91eae4,
+		#86a8e7,
+		#7f7fd5
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#627f9b,
+		#86a8e7,
+		#7f7fd5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.txt-footer {
+	font-size: 12px;
+	color: var(--light-color);
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.txt-footer-txt {
+	color: var(--light-color);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.footer-btn {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.5rem 2.5rem;
+	background: var(--light-color);
+	color: var(--blue-color);
+	border-radius: 50px;
+}
+
+.footer-content-right {
+	text-align: right;
+	align-items: center;
+}

@@ -1,0 +1,92 @@
+:root {
+	--light-color: #fff;
+	--dark-color: #2d2e2e;
+	--bg-color: #1c1c1c;
+	--pg-color: #b3b3b3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--bg-color);
+	height: 100vh;
+}
+
+html {
+	font-family: spotify-circular, spotify-circular-cyrillic,
+		spotify-circular-arabic, spotify-circular-hebrew, "Helvetica Neue",
+		helvetica, arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS Gothic",
+		sans-serif;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+.txt-primary {
+	color: var(--light-color);
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+.txt-secondary {
+	color: var(--light-color);
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.txt-sml {
+	color: #b3b3b3;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	color: var(--pg-color);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 250px 1fr;
+	grid-template-rows: 1fr 80px;
+	grid-template-areas:
+		"sidebar main"
+		"footer footer";
+	/* grid-gap: 10px; */
+	/* padding: 0 10px; */
+
+	height: 100vh;
+	/* border: 1px dotted #fff; */
+}
+
+/*===========NAV==========*/
+.main {
+	grid-area: main;
+	/* border: 1px dotted #fff; */
+}
+
+/*===========SIDEBAR==========*/
+.sidebar {
+	grid-area: sidebar;
+	background: #000000;
+	/* border: 1px dotted #fff; */
+}
+
+/*===========FOOTER==========*/
+.footer {
+	grid-area: footer;
+
+}
